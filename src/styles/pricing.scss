@@ -1,0 +1,151 @@
+.pricing_section {
+    margin: 15vh auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h6 {
+        color: rgb(75, 75, 255);
+        font-size: 1.25rem;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        font-variant: small-caps;
+        font-family: "Oxanium", serif;
+    }
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-size: 3.25rem;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        margin: 0.5rem 0 2.5rem;
+    }
+    .cards_wrapper {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card {
+            width: 30%;
+            border-radius: 18px;
+            border: 2px solid rgb(225, 225, 225);
+            padding: 1.25rem 0.75rem 1.5rem;
+            position: relative;
+            z-index: 10;
+            background-color: #FFF;
+            &:nth-of-type(1) {
+                transform: translateX(3.5%);
+                z-index: 0;
+            }
+            &:nth-of-type(3) {
+                transform: translateX(-3.5%);
+                z-index: 0;
+            }
+            .popular {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: blue;
+                color: white;
+                border-bottom-left-radius: 12px;
+                padding: 0.25rem 0.6rem;
+                border-top-right-radius: 15px;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                .star_icon {
+                    margin-right: 3px;
+                }
+            }
+            &.highlighted {
+                width: 33.3333%;
+                border-color: blue;
+                padding: 2rem 0.75rem 2rem;
+                button {
+                    border: 2px solid blue;
+                    background-color: blue;
+                    color: #FFF;
+                    &:hover {
+                        background-color: transparent;
+                        color: rgb(0, 0, 0);
+                        border-color: black;
+                    }
+                }
+            }
+            .subsc_type {
+                font-size: 17px;
+                color: rgb(85, 85, 85);
+                font-weight: 600;
+                letter-spacing: -0.3px;
+            }
+            .price_wrapper {
+                h3 {
+                    line-height: 1;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 3rem;
+                    font-weight: 600;
+                    letter-spacing: -1.75px;
+                    margin: 1rem 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    justify-content: center;
+                    span {
+                        font-size: 1rem;
+                        color: gray;
+                        letter-spacing: -0.25px;
+                    }
+                }
+                p {
+                    color: rgb(150, 150, 150);
+                }
+            }
+            ul {
+                margin: 1rem auto;
+                padding-bottom: 0.75rem;
+                width: 90%;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                border-bottom: 1px solid rgb(175, 175, 175);
+                li {
+                    font-size: 15px;
+                    font-family: "Poppins", sans-serif;
+                    margin: 0.2rem 0;
+                    display: flex;
+                    align-items: center;
+                    .icon {
+                        color: blue;
+                        margin-right: 2px;
+                    }
+                }
+            }
+            button {
+                width: 90%;
+                margin: 0 auto;
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                outline: none;
+                background-color: transparent;
+                padding: 0.4rem 1rem;
+                border: 2px solid rgb(220, 220, 220);
+                border-radius: 5px;
+                cursor: pointer;
+                transition: .2s ease-in-out;
+                &:hover {
+                    background-color: #000159;
+                    color: #FFF;
+                    border-color: #000159;
+                }
+            }
+            .subsc_description {
+                color: rgb(75, 75, 75);
+                font-size: 15px;
+                margin-top: 1.25rem;
+            }
+        }
+    }
+}

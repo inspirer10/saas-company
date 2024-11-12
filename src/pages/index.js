@@ -1,5 +1,7 @@
+import FAQ from '@/Components/FAQ';
 import Footer from '@/Components/Footer';
 import Header from '@/Components/Header';
+import Pricing from '@/Components/Pricing';
 import Trial from '@/Components/Trial';
 
 import Head from 'next/head';
@@ -20,8 +22,9 @@ export default function Home() {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <div>
-                <h1>TEST</h1>
                 <Header />
+                <Pricing />
+                <FAQ />
                 <Trial />
                 <Footer />
             </div>
