@@ -1,3 +1,7 @@
+import Footer from '@/Components/Footer';
+import Header from '@/Components/Header';
+import Trial from '@/Components/Trial';
+
 import Head from 'next/head';
 
 export default function Home() {
@@ -17,6 +21,9 @@ export default function Home() {
             </Head>
             <div>
                 <h1>TEST</h1>
+                <Header />
+                <Trial />
+                <Footer />
             </div>
         </>
     );
