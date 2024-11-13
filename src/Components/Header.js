@@ -12,7 +12,9 @@ function Header() {
                 <div className='links'>
                     <p>Home</p>
                     <p>Solutions</p>
-                    <p>Pricing</p> <p>FAQ</p>
+                    <p>Opinions</p>
+                    <p>Pricing</p>
+                    <p>FAQ</p>
                 </div>
                 <button>
                     <SiStartrek className='icon' />

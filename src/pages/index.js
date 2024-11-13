@@ -1,12 +1,27 @@
-import FAQ from '@/Components/FAQ';
-import Footer from '@/Components/Footer';
+import Lenis from 'lenis';
+import Head from 'next/head';
+import { useEffect } from 'react';
+
 import Header from '@/Components/Header';
 import Pricing from '@/Components/Pricing';
+import FAQ from '@/Components/FAQ';
 import Trial from '@/Components/Trial';
-
-import Head from 'next/head';
+import Footer from '@/Components/Footer';
+import Introduction from '@/Components/Introduction';
+import Problem from '@/Components/Problem';
 
 export default function Home() {
+    useEffect(() => {
+        const lenis = new Lenis();
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    }, []);
+
     return (
         <>
             <Head>
@@ -23,6 +38,9 @@ export default function Home() {
             </Head>
             <div>
                 <Header />
+
+                <Introduction />
+                <Problem />
                 <Pricing />
                 <FAQ />
                 <Trial />
