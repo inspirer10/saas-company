@@ -8,7 +8,7 @@
     text-align: center;
     h6 {
         color: rgb(75, 75, 255);
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: 500;
         letter-spacing: -0.5px;
         font-variant: small-caps;
@@ -16,21 +16,31 @@
     }
     h2 {
         font-family: "Poppins", sans-serif;
-        font-size: 3.4rem;
+        font-size: 3.5rem;
         font-weight: 600;
         letter-spacing: -0.5px;
         margin: 0.25rem 0 2.5rem;
     }
     p {
+        font-family: "Oxanium", serif;
         margin: 3rem 0;
-        font-size: 15px;
+        font-size: 16px;
+        letter-spacing: 0.15px;
+        color: rgb(150, 150, 150);
         span {
             border-bottom: 1px solid black;
+            transition: .17s cubic-bezier(0.215, 0.610, 0.355, 1);
             cursor: pointer;
+        }
+        &:hover {
+            span {
+                color: black;
+            }
         }
     }
     .faq {
-        width: 47.5%;
+        width: 50%;
+        width: max(50%, 800px);
         margin: auto;
         .faq-item {
             padding: 10px 0;

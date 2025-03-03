@@ -1,6 +1,6 @@
-//import Lenis from 'lenis';
+import Lenis from 'lenis';
 import Head from 'next/head';
-//import { useEffect } from 'react';
+import { useEffect } from 'react';
 
 import Header from '@/Components/Header';
 import Pricing from '@/Components/Pricing';
@@ -13,7 +13,7 @@ import HowItWorks from '@/Components/HowItWorks';
 import Testimonials from '@/Components/Testimonials';
 
 export default function Home() {
-    /* useEffect(() => {
+    useEffect(() => {
         const lenis = new Lenis();
 
         function raf(time) {
@@ -22,7 +22,7 @@ export default function Home() {
         }
 
         requestAnimationFrame(raf);
-    }, []);*/
+    }, []);
 
     return (
         <>
@@ -40,7 +40,6 @@ export default function Home() {
             </Head>
             <div>
                 <Header />
-
                 <Introduction />
                 <Problem />
                 <HowItWorks />

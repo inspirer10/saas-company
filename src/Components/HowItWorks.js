@@ -17,7 +17,9 @@ function HowItWorks() {
                             <GrFormUpload className='icon' />
                         </div>
                         <div className='step_content'>
-                            <h5>1. Upload Your Data</h5>
+                            <h5>
+                                <span>1.</span> Upload Your Data
+                            </h5>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Suscipit, deserunt. Itaque
@@ -32,7 +34,9 @@ function HowItWorks() {
                             <AiOutlineThunderbolt className='icon' />
                         </div>
                         <div className='step_content'>
-                            <h5>2. Click Start</h5>
+                            <h5>
+                                <span>2.</span> Click Start
+                            </h5>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Suscipit, deserunt. Itaque
@@ -47,7 +51,9 @@ function HowItWorks() {
                             <BsStars className='icon' />
                         </div>
                         <div className='step_content'>
-                            <h5>3. Get Actionable Insights</h5>
+                            <h5>
+                                <span>3.</span> Get Actionable Insights
+                            </h5>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Suscipit, deserunt. Itaque
