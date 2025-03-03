@@ -10,6 +10,7 @@ import Footer from '@/Components/Footer';
 import Introduction from '@/Components/Introduction';
 import Problem from '@/Components/Problem';
 import HowItWorks from '@/Components/HowItWorks';
+import Testimonials from '@/Components/Testimonials';
 
 export default function Home() {
     /* useEffect(() => {
@@ -44,6 +45,7 @@ export default function Home() {
                 <Problem />
                 <HowItWorks />
                 <Pricing />
+                <Testimonials />
                 <FAQ />
                 <Trial />
                 <Footer />

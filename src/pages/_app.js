@@ -4,6 +4,7 @@ import '@/styles/header.scss';
 import '@/styles/problem.scss';
 import '@/styles/howitWorks.scss';
 import '@/styles/pricing.scss';
+import '@/styles/testimonials.scss';
 import '@/styles/faq.scss';
 import '@/styles/freeTrial.scss';
 import '@/styles/footer.scss';
