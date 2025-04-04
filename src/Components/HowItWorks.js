@@ -21,10 +21,9 @@ function HowItWorks() {
                                 <span>1.</span> Upload Your Data
                             </h5>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Suscipit, deserunt. Itaque
-                                obcaecati incidunt sequi eius laudantium commodi
-                                tempore ipsa a rerum.
+                                Simply drag and drop your files or connect your
+                                database. Our system will process them in
+                                seconds.
                             </p>
                         </div>
                     </div>
@@ -38,10 +37,8 @@ function HowItWorks() {
                                 <span>2.</span> Click Start
                             </h5>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Suscipit, deserunt. Itaque
-                                obcaecati incidunt sequi eius laudantium commodi
-                                tempore ipsa a rerum.
+                                Activate the AI with a single click. It will
+                                analyze your data and optimize your workflow.
                             </p>
                         </div>
                     </div>
@@ -55,10 +52,8 @@ function HowItWorks() {
                                 <span>3.</span> Get Actionable Insights
                             </h5>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Suscipit, deserunt. Itaque
-                                obcaecati incidunt sequi eius laudantium commodi
-                                tempore ipsa a rerum.
+                                Receive clear, data-driven insights to make
+                                informed decisions and boost efficiency.
                             </p>
                         </div>
                     </div>
