@@ -1,6 +1,7 @@
 .pricing_section {
     margin: 15vh auto;
     width: 80%;
+    padding-top: 12.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,21 +126,21 @@
                 }
             }
             button {
-                width: 90%;
-                margin: 0 auto;
-                font-family: "Poppins", sans-serif;
+                font-family: "Geist", sans-serif;
                 font-size: 16px;
                 font-weight: 500;
+                width: 90%;
+                margin: 0 auto;
                 outline: none;
                 background-color: transparent;
-                padding: 0.4rem 1rem;
+                padding: 0.5rem 1rem;
                 border: 2px solid rgb(220, 220, 220);
-                border-radius: 5px;
+                border-radius: 8px;
                 cursor: pointer;
                 transition: .2s ease-in-out;
                 &:hover {
-                    background-color: #000159;
                     color: #FFF;
+                    background-color: #000159;
                     border-color: #000159;
                 }
             }

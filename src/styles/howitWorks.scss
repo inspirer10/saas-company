@@ -1,6 +1,7 @@
 .howItWorks_section {
+    margin: 5vh auto;
     width: 80%;
-    margin: 15vh auto;
+    padding-top: 12.5vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -23,7 +24,6 @@
         line-height: 1.25;
     }
     article {
-        margin: 2.5vh 0 5vh;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -38,7 +38,7 @@
                 align-items: center;
                 justify-content: space-between;
                 text-align: left;
-                margin: 1.25rem 0;
+                margin: 1.75rem 0;
                 padding-left: 1.25rem;
                 border-left: 3px solid lightgray;
                 &:hover {
@@ -73,23 +73,29 @@
                 }
                 .step_content {
                     h5 {
-                        display: flex;
-                        align-items: center;
-                        gap: 0.4rem;
                         font-family: "Geist", sans-serif;
                         font-size: 17px;
                         font-weight: 500;
+                        gap: 7px;
                         letter-spacing: -0.2px;
-                        color: rgb(25, 25, 25);
+                        color: rgb(20, 20, 20);
+                        display: flex;
+                        align-items: center;
                         span {
-                            color: rgb(175, 175, 175);
+                            color: rgb(150, 150, 150);
+                            user-select: none;
                         }
                     }
                     p {
-                        color: rgb(150, 150, 150);
+                        color: rgb(175, 175, 175);
                     }
                 }
             }
         }
+    }
+    img {
+        object-fit: cover;
+        height: auto;
+        width: auto;
     }
 }

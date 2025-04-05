@@ -7,7 +7,7 @@ import { AiOutlineThunderbolt } from 'react-icons/ai';
 
 function Problem() {
     return (
-        <section className='problem_section'>
+        <section className='problem_section' id='purpose'>
             <motion.h5
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

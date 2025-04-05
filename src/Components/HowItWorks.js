@@ -8,7 +8,7 @@ import { BsStars } from 'react-icons/bs';
 
 function HowItWorks() {
     return (
-        <section className='howItWorks_section'>
+        <section className='howItWorks_section' id='about'>
             <motion.h6
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -76,7 +76,12 @@ function HowItWorks() {
                     </div>
                 </div>
 
-                <Image src={''} height={350} width={700} />
+                <Image
+                    src={'/placeholder.png'}
+                    height={400}
+                    width={500}
+                    alt='placeholder'
+                />
             </article>
         </section>
     );

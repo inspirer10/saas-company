@@ -5,7 +5,7 @@ import { FaStar } from 'react-icons/fa6';
 
 function Pricing() {
     return (
-        <section className='pricing_section'>
+        <section className='pricing_section' id='pricing'>
             <motion.h6
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}

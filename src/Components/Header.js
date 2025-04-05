@@ -5,16 +5,27 @@ function Header() {
     return (
         <header>
             <nav>
-                <div className='logo'>
+                <div
+                    className='logo'
+                    onClick={() =>
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                    }
+                >
                     <SiStartrek className='icon' />
                     <h5>loco.ai</h5>
                 </div>
                 <div className='links'>
-                    <p>Home</p>
-                    <p>Solutions</p>
-                    <p>Opinions</p>
-                    <p>Pricing</p>
-                    <p>FAQ</p>
+                    <a
+                        onClick={() =>
+                            window.scrollTo({ top: 0, behavior: 'smooth' })
+                        }
+                    >
+                        Home
+                    </a>
+                    <a href='#purpose'>Purpose</a>
+                    <a href='#about'>About</a>
+                    <a href='#pricing'>Pricing</a>
+                    <a href='#faq'>FAQ</a>
                 </div>
                 <button>
                     <SiStartrek className='icon' />
