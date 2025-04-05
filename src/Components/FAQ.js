@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import FAQItem from './FaqItem';
 
 function FAQ() {
@@ -27,8 +28,23 @@ function FAQ() {
 
     return (
         <section className='faq_section' id='faq'>
-            <h6>FAQ</h6>
-            <h2>Frequently asked questions</h2>
+            <motion.h6
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: 'easeInOut' }}
+                viewport={{ once: true }}
+            >
+                FAQ
+            </motion.h6>
+
+            <motion.h2
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: 'easeInOut', delay: 0.1 }}
+                viewport={{ once: true }}
+            >
+                Frequently asked questions
+            </motion.h2>
 
             <div className='faq'>
                 {faqData.map((item, index) => (

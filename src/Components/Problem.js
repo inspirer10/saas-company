@@ -1,15 +1,39 @@
 import React from 'react';
+
+import { motion } from 'framer-motion';
+
 import { LuBrain, LuShield } from 'react-icons/lu';
 import { AiOutlineThunderbolt } from 'react-icons/ai';
 
 function Problem() {
     return (
         <section className='problem_section'>
-            <h5>PROBLEM</h5>
-            <h2>Manually entering your data is a hassle.</h2>
+            <motion.h5
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: 'easeInOut' }}
+                viewport={{ once: true }}
+            >
+                PROBLEM
+            </motion.h5>
+
+            <motion.h2
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: 'easeInOut', delay: 0.1 }}
+                viewport={{ once: true }}
+            >
+                Manually entering your data is a hassle.
+            </motion.h2>
 
             <article>
-                <div className='card'>
+                <motion.div
+                    className='card'
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1.1, ease: 'easeInOut' }}
+                    viewport={{ once: true }}
+                >
                     <div className='icon_wrapper'>
                         <LuBrain className='icon' />
                     </div>
@@ -19,8 +43,19 @@ function Problem() {
                         leads to inefficiencies. AI helps streamline workflows
                         and reduce errors.
                     </p>
-                </div>
-                <div className='card'>
+                </motion.div>
+
+                <motion.div
+                    className='card'
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                        duration: 1.1,
+                        ease: 'easeInOut',
+                        delay: 0.35,
+                    }}
+                    viewport={{ once: true }}
+                >
                     <div className='icon_wrapper'>
                         <AiOutlineThunderbolt className='icon' />
                     </div>
@@ -30,8 +65,19 @@ function Problem() {
                         business moves. Automation speeds up operations and
                         ensures accuracy
                     </p>
-                </div>
-                <div className='card'>
+                </motion.div>
+
+                <motion.div
+                    className='card'
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                        duration: 1.1,
+                        ease: 'easeInOut',
+                        delay: 0.7,
+                    }}
+                    viewport={{ once: true }}
+                >
                     <div className='icon_wrapper'>
                         <LuShield className='icon' />
                     </div>
@@ -41,7 +87,7 @@ function Problem() {
                         breaches. AI-powered solutions help maintain data
                         integrity and security.
                     </p>
-                </div>
+                </motion.div>
             </article>
         </section>
     );

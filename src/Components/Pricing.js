@@ -1,12 +1,28 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { TiTick } from 'react-icons/ti';
 import { FaStar } from 'react-icons/fa6';
 
 function Pricing() {
     return (
         <section className='pricing_section'>
-            <h6>PRICING</h6>
-            <h2>Choose the plan that's right for you</h2>
+            <motion.h6
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: 'easeInOut' }}
+                viewport={{ once: true }}
+            >
+                PRICING
+            </motion.h6>
+
+            <motion.h2
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: 'easeInOut', delay: 0.1 }}
+                viewport={{ once: true }}
+            >
+                Choose the plan that's right for you
+            </motion.h2>
 
             <div className='cards_wrapper'>
                 <div className='card'>

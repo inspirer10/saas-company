@@ -8,6 +8,16 @@ import { GrAnnounce } from 'react-icons/gr';
 import { FaPlayCircle } from 'react-icons/fa';
 
 function Introduction() {
+    const logos = [
+        '/company1.png',
+        '/company2.png',
+        '/company3.png',
+        '/company4.png',
+        '/company5.png',
+        '/company6.png',
+        '/company7.png',
+        '/company8.png',
+    ];
     return (
         <section className='introduction_section'>
             <motion.div
@@ -75,6 +85,51 @@ function Introduction() {
             >
                 7 day free trial. No credit card required
             </motion.p>
+
+            <div className='recommendation-wrapper'>
+                <motion.h5
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1, ease: 'easeInOut', delay: 1.25 }}
+                    viewport={{ once: true }}
+                >
+                    They trusted us
+                </motion.h5>
+
+                <motion.div
+                    className='slider-container'
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                        duration: 1.2,
+                        ease: 'easeInOut',
+                        delay: 1.25,
+                    }}
+                    viewport={{ once: true }}
+                >
+                    <div className='slider-items'>
+                        {logos.map((logo, index) => (
+                            <img
+                                className='logo-img'
+                                key={index}
+                                src={`${logo}`}
+                                alt={`Logo ${index + 1}`}
+                            />
+                        ))}
+                    </div>
+
+                    <div className='slider-items'>
+                        {logos.map((logo, index) => (
+                            <img
+                                className='logo-img'
+                                key={index}
+                                src={`${logo}`}
+                                alt={`Logo ${index + 1}`}
+                            />
+                        ))}
+                    </div>
+                </motion.div>
+            </div>
         </section>
     );
 }
