@@ -170,12 +170,22 @@
 //? 1366 x 768
 @media (max-width: 1370px) {
     .pricing_section {
-        width: 95%;
+        width: 97.5%;
         h6 {
             font-size: 1.25rem;
         }
         h2 {
             font-size: 3rem;
+        }
+    }
+}
+
+//? 1280 x 720
+@media (max-width: 1285px) {
+    .pricing_section {
+        width: 100%;
+        .cards_wrapper {
+            width: 95%;
         }
     }
 }

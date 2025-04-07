@@ -95,3 +95,28 @@ header {
         }
     }
 }
+
+//? 1280 x 720
+@media (max-width: 1285px) {
+    header {
+        min-width: 900px;
+        nav {
+            .logo {
+                .icon {
+                    font-size: 22px;
+                }
+                h5 {
+                    font-size: 20px;
+                }
+            }
+            .links a {
+                font-size: 16px;
+                margin: 0 5px;
+                padding: 6px 1rem;
+            }
+            button {
+                font-size: 15px;
+            }
+        }
+    }
+}
