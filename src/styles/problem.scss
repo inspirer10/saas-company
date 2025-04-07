@@ -85,3 +85,25 @@
         }
     }
 }
+
+//? 1440 x 900
+@media (max-width: 1450px) {
+    .problem_section {
+        width: 90%;
+    }
+}
+
+//? 1366 x 768
+@media (max-width: 1370px) {
+    .problem_section {
+        h5 {
+            font-size: 1.25rem;
+        }
+        h2 {
+            font-size: 3rem;
+        }
+        article {
+            width: 95%;
+        }
+    }
+}

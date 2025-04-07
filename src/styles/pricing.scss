@@ -152,3 +152,30 @@
         }
     }
 }
+
+//? 1536 x 864
+@media (max-width: 1550px) {
+    .pricing_section {
+        width: 85%;
+    }
+}
+
+//? 1440 x 900
+@media (max-width: 1450px) {
+    .pricing_section {
+        width: 87.5%;
+    }
+}
+
+//? 1366 x 768
+@media (max-width: 1370px) {
+    .pricing_section {
+        width: 95%;
+        h6 {
+            font-size: 1.25rem;
+        }
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}

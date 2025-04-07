@@ -116,3 +116,17 @@
         }
     }
 }
+
+//? 1536 x 864
+@media (max-width: 1550px) {
+    .testimonials_section {
+        width: 90%;
+    }
+}
+
+//? 1440 x 900
+@media (max-width: 1440px) {
+    .testimonials_section {
+        width: 97.5%;
+    }
+}

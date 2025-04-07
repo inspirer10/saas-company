@@ -10,7 +10,7 @@
     background: linear-gradient(90deg, rgba(29, 56, 253, 0.3) 0%, rgba(29, 56, 253, 0.3) 50%, rgba(29, 56, 253, 0.3) 100%);
     background: linear-gradient(90deg, rgba(29, 56, 253, 0.45) 0%, rgba(29, 56, 253, 0.25) 50%, rgba(29, 56, 253, 0.45) 100%);
     background: radial-gradient(circle, rgba(25, 0, 255, 0.0) 0%, rgba(0, 18, 255, 0.8) 100%);
-    p {
+    h6 {
         font-family: "Oxanium", serif;
         font-size: 1.25rem;
         font-weight: 500;
@@ -42,13 +42,26 @@
         align-items: center;
         cursor: pointer;
         transition: .175s ease-in-out;
-        .icon {
-            margin-right: 10px;
-        }
+        gap: 0.75rem;
         &:hover {
             background-color: transparent;
             color: #000;
             border-color: #000;
+        }
+    }
+}
+
+//? 1366 x 768
+@media (max-width: 1370px) {
+    .freeTrial_section {
+        h6 {
+            font-size: 1.25rem;
+        }
+        h2 {
+            font-size: 3rem;
+        }
+        button {
+            font-size: 16px;
         }
     }
 }

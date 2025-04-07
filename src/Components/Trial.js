@@ -4,7 +4,7 @@ import { SiStartrek } from 'react-icons/si';
 function Trial() {
     return (
         <section className='freeTrial_section'>
-            <p>ready to get started?</p>
+            <h6>ready to get started?</h6>
             <h2>Start your free trial today.</h2>
             <button>
                 <SiStartrek className='icon' />
