@@ -119,3 +119,40 @@
         }
     }
 }
+
+//* Mobile Phones
+@media (max-width: 450px) {
+    .howItWorks_section {
+        width: 95%;
+        margin-bottom: 0;
+        h6 {
+            font-size: 20px;
+        }
+        h2 {
+            width: 90%;
+            font-size: 2.75rem;
+            line-height: 1.175;
+        }
+        article {
+            flex-direction: column;
+            .steps_wrapper {
+                width: 97.5%;
+                .step {
+                    margin: 1.25rem 0;
+                    padding-left: 1rem;
+                    .step_content {
+                        h5 {
+                            font-size: 18px;
+                        }
+                        p {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        img {
+            width: 95vw;
+        }
+    }
+}

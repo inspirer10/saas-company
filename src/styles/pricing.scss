@@ -189,3 +189,46 @@
         }
     }
 }
+
+//* Mobile Phones
+@media (max-width: 450px) {
+    .pricing_section {
+        margin-bottom: 0vh;
+        h6 {
+            font-size: 20px;
+        }
+        h2 {
+            width: 90%;
+            font-size: 2.75rem;
+        }
+        .cards_wrapper {
+            flex-direction: column;
+            gap: 0.75rem;
+            .card {
+                width: 90%;
+                padding: 1rem 0.75rem 1.25rem;
+                &:nth-of-type(1),
+                &:nth-of-type(3) {
+                    transform: translateX(0);
+                }
+                &.highlighted {
+                    width: 90%;
+                }
+                .subsc_type {
+                    font-size: 20px;
+                }
+                .price_wrapper {
+                    h3 {
+                        margin: 0.5rem 0 0.25rem;
+                    }
+                }
+                ul li {
+                    margin: 2px 0;
+                }
+                .subsc_description {
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+}

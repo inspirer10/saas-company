@@ -120,3 +120,30 @@ header {
         }
     }
 }
+
+//* Mobile Phones
+@media (max-width: 450px) {
+    header {
+        width: 95%;
+        min-width: 0;
+        padding: 0.5rem 0.5rem;
+        border-radius: 50px;
+        nav {
+            .logo {
+                display: none;
+            }
+            .links {
+                width: 100%;
+                justify-content: space-between;
+                a {
+                    font-size: 15px;
+                    padding: 5px 0.75rem;
+                    margin: 0;
+                }
+            }
+            button {
+                display: none;
+            }
+        }
+    }
+}

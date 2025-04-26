@@ -107,3 +107,41 @@
         }
     }
 }
+
+//* Mobile Phones
+@media (max-width: 450px) {
+    .problem_section {
+        padding-top: 2.5vh;
+        width: 97.5%;
+        h5 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 2.75rem;
+            line-height: 1.175;
+            &::after {
+                display: none;
+            }
+        }
+        article {
+            width: 100%;
+            .card {
+                align-items: center;
+                h6 {
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 1.25;
+                    letter-spacing: -0.5px;
+                    height: 2.25rem;
+                }
+                p {
+                    line-height: 1.45;
+                    letter-spacing: -0.4px;
+                    font-size: 13px;
+                    text-align: center;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

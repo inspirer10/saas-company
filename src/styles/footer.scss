@@ -129,3 +129,53 @@ footer {
         width: 95%;
     }
 }
+
+//* Mobile Phones
+@media screen and (max-width: 450px) {
+    footer {
+        width: 97.5%;
+        .footer_logo {
+            padding: 0 0.25rem;
+            div {
+                h5,
+                .icon {
+                    font-size: 22px;
+                    margin: 0;
+                }
+            }
+            p {
+                font-size: 15px;
+                letter-spacing: -0.25px;
+            }
+        }
+        .footer_content {
+            flex-wrap: wrap;
+            main {
+                width: 100%;
+                .footer_content-column {
+                    width: 33.33333%;
+                    h6 {
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 14px;
+                        font-weight: 300;
+                        letter-spacing: -0.5px;
+                        text-align: center;
+                        display: flex;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        .footer_bottom {
+            padding: 0 0.25rem;
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    .footer_contact {
+        margin: 1.25rem auto 0;
+    }
+}
