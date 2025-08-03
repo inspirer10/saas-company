@@ -18,10 +18,10 @@
     }
     h2 {
         font-family: "Poppins", sans-serif;
-        font-size: 3.5rem;
+        font-size: 3.75rem;
         font-weight: 600;
         letter-spacing: -0.5px;
-        margin: 0rem 0 2rem;
+        margin: 0rem 0 2.25rem;
         line-height: 1.25;
     }
     p {
@@ -29,10 +29,10 @@
         margin: 3rem 0;
         font-size: 16px;
         letter-spacing: 0.25px;
-        color: rgb(150, 150, 150);
+        color: rgb(125, 125, 125);
         span {
             border-bottom: 1px solid black;
-            transition: .17s cubic-bezier(0.215, 0.610, 0.355, 1);
+            transition: .25s cubic-bezier(0.215, 0.610, 0.355, 1);
             cursor: pointer;
         }
         &:hover {
@@ -136,9 +136,8 @@
 }
 
 //* Mobile Phones
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     .faq_section {
-        padding-top: 0;
         width: 95%;
         h2 {
             font-size: 2.75rem;

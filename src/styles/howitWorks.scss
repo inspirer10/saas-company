@@ -17,11 +17,12 @@
     }
     h2 {
         font-family: "Poppins", sans-serif;
-        font-size: 3.5rem;
+        font-size: 3.75rem;
         font-weight: 600;
         letter-spacing: -0.5px;
         margin: 0rem 0 2rem;
         line-height: 1.25;
+        color: rgb(7, 7, 7);
     }
     article {
         width: 100%;
@@ -68,26 +69,26 @@
                         left: 50%;
                         transform: translate(-50%, -50%);
                         color: blue;
-                        transition: .15s ease-in-out;
+                        will-change: transform;
+                        transition: .3s ease;
                     }
                 }
                 .step_content {
                     h5 {
                         font-family: "Geist", sans-serif;
-                        font-size: 17px;
-                        font-weight: 500;
-                        gap: 7px;
-                        letter-spacing: -0.2px;
+                        font-size: 19px;
+                        font-weight: 600;
+                        gap: 6px;
                         color: rgb(20, 20, 20);
                         display: flex;
                         align-items: center;
                         span {
-                            color: rgb(150, 150, 150);
+                            color: rgb(175, 175, 175);
                             user-select: none;
                         }
                     }
                     p {
-                        color: rgb(175, 175, 175);
+                        color: rgb(150, 150, 150);
                     }
                 }
             }
@@ -121,7 +122,7 @@
 }
 
 //* Mobile Phones
-@media (max-width: 450px) {
+@media (max-width: 650px) {
     .howItWorks_section {
         width: 95%;
         margin-bottom: 0;

@@ -48,7 +48,7 @@
     }
     h1 {
         font-family: "Poppins", sans-serif;
-        font-size: 4rem;
+        font-size: 4.25rem;
         font-weight: 600;
         letter-spacing: -1px;
         line-height: 1.25;
@@ -72,7 +72,7 @@
     .subHeading {
         color: rgb(135, 135, 135);
         font-size: 1.25rem;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 1.25;
     }
     .buttons-wrapper {
@@ -83,7 +83,7 @@
         button {
             font-family: "Poppins", sans-serif;
             font-size: 18px;
-            letter-spacing: -0.4px;
+            letter-spacing: -0.25px;
             line-height: 2rem;
             color: white;
             margin: 2.5rem 0 0.75rem;
@@ -92,7 +92,7 @@
             display: flex;
             align-items: center;
             cursor: pointer;
-            transition: .2s ease-in-out;
+            transition: .3s ease;
             &:hover {
                 background-color: transparent;
                 color: rgb(0, 0, 0);
@@ -115,6 +115,7 @@
                 font-size: 1.5rem;
             }
             span {
+                font-size: 16px;
                 font-family: "Oxanium", serif;
                 color: rgb(150, 150, 150);
             }
@@ -123,9 +124,9 @@
     .free_trial {
         font-family: "Roboto", sans-serif;
         color: rgb(100, 100, 100);
-        font-size: 17px;
+        font-size: 18px;
         font-weight: 300;
-        letter-spacing: -0.2px;
+        letter-spacing: -0.25px;
     }
     .recommendation-wrapper {
         margin: 5rem 0;
@@ -152,7 +153,7 @@
                 position: absolute;
                 top: 0;
                 content: '';
-                width: 250px;
+                width: 10%;
                 height: 100%;
                 z-index: 1;
                 pointer-events: none;
@@ -312,7 +313,7 @@
 }
 
 //* Mobile Phones
-@media (max-width: 450px) {
+@media (max-width: 650px) {
     .introduction_section {
         .introduction_wrapper {
             font-size: 14px;
@@ -339,16 +340,19 @@
             font-size: 15px;
         }
         .buttons-wrapper {
+            width: 100%;
             flex-direction: column;
             justify-content: center;
             gap: 6px;
-            margin: 1rem 0 0.5rem;
+            margin: 1.75rem 0 0.5rem;
             button {
+                width: 90%;
                 font-size: 16px;
                 margin: 0;
             }
             .get_started-button {
                 padding: 6px 1.75rem;
+                justify-content: center;
             }
             .watch_demo-button {
                 padding: 6px 1.25rem;
@@ -356,6 +360,9 @@
                     font-size: 14px;
                 }
             }
+        }
+        .free_trial {
+            margin-top: 0.5rem;
         }
         .recommendation-wrapper {
             margin: 3rem 0;

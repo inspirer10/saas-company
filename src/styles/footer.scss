@@ -64,7 +64,8 @@ footer {
                     align-items: center;
                     border-bottom: 1px solid transparent;
                     cursor: pointer;
-                    transition: .15s ease-in-out;
+                    transition: .25s ease;
+                    transition-delay: 0.05s;
                     &:hover {
                         color: #000159;
                         border-bottom: 1px solid #000159;
@@ -98,7 +99,9 @@ footer {
                         left: 50%;
                         transform: translate(-50%, -50%);
                         color: rgb(75, 75, 255);
-                        transition: .125s ease-in-out;
+                        will-change: transform;
+                        transition: .275s ease;
+                        transition-delay: 0.05s;
                         cursor: pointer;
                     }
                 }
@@ -131,7 +134,7 @@ footer {
 }
 
 //* Mobile Phones
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
     footer {
         width: 97.5%;
         .footer_logo {
@@ -145,7 +148,7 @@ footer {
             }
             p {
                 font-size: 15px;
-                letter-spacing: -0.25px;
+                letter-spacing: -0.4px;
             }
         }
         .footer_content {
@@ -172,10 +175,11 @@ footer {
             padding: 0 0.25rem;
             p {
                 font-size: 14px;
+                letter-spacing: -0.25px;
             }
         }
     }
     .footer_contact {
-        margin: 1.25rem auto 0;
+        margin: 1.5rem auto 0;
     }
 }

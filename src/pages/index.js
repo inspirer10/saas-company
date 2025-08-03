@@ -35,7 +35,7 @@ export default function Home() {
                 />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <div>
+            <>
                 <Header />
                 <Introduction />
                 <Problem />
@@ -45,7 +45,7 @@ export default function Home() {
                 <FAQ />
                 <Trial />
                 <Footer />
-            </div>
+            </>
         </>
     );
 }
