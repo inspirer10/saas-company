@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import FAQItem from './FaqItem';
+import { FaChevronDown } from 'react-icons/fa';
 
 function FAQ() {
+    const [openIndex, setOpenIndex] = useState(null);
+
+    const toggleFaq = (idx) => {
+        setOpenIndex(openIndex === idx ? null : idx);
+    };
+
     const faqData = [
         {
             question: 'What is loco.ai?',
@@ -27,12 +34,13 @@ function FAQ() {
     ];
 
     return (
-        <section className='faq_section' id='faq'>
+        <section className='faq-section' id='faq'>
             <motion.h6
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeInOut' }}
                 viewport={{ once: true }}
+                className='heading'
             >
                 FAQ
             </motion.h6>
@@ -42,21 +50,45 @@ function FAQ() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeInOut', delay: 0.1 }}
                 viewport={{ once: true }}
+                className='subHeading'
             >
                 Frequently asked questions
             </motion.h2>
 
-            <div className='faq'>
-                {faqData.map((item, index) => (
-                    <FAQItem
-                        key={index}
-                        question={item.question}
-                        answer={item.answer}
-                    />
+            <div className='faq-container'>
+                {faqData.map((item, idx) => (
+                    <div className='faq-item' key={idx}>
+                        <div
+                            className={`faq-question${
+                                openIndex === idx ? ' open' : ''
+                            }`}
+                            onClick={() => toggleFaq(idx)}
+                            aria-expanded={openIndex === idx}
+                            aria-controls={`faq-content-${idx}`}
+                        >
+                            <p>{item.question}</p>
+                            <FaChevronDown
+                                className={`faq-icon${
+                                    openIndex === idx ? ' open' : ''
+                                }`}
+                                aria-hidden='true'
+                            />
+                        </div>
+                        <div
+                            className={`faq-answer${
+                                openIndex === idx ? ' open' : ''
+                            }`}
+                            id={`faq-content-${idx}`}
+                            role='region'
+                            aria-hidden={openIndex !== idx}
+                        >
+                            <p>{item.answer}</p>
+                        </div>
+                    </div>
                 ))}
             </div>
 
-            <p>
+            <p className='faq-contact'>
                 Still have questions? Email us at <span>support@loco.ai</span>
             </p>
         </section>
